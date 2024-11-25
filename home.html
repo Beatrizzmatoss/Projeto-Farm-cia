@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Farmácia</title>
+    <link rel="stylesheet" href="/home.css"
+    <script src="/home.js"
+</head>
+<body>
+    <!-- Navbar -->
+  <nav>
+    <div class="logo">Farmácia Online</div>
+    <div class="search-bar">
+      <input type="text" placeholder="O que você precisa hoje?">
+      <button>Pesquisar</button>
+    </div>
+    <div class="menu">
+    <ul> 
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Higiene</a></li>
+      <li><a href="#">Cuidados com a Pele</a></li>
+      <li><a href="#">Cosméticos</a></li>
+      <li><a href="#">Medicamentos</a></li>
+      <div class="cart">
+        <li><img src="/src/imagens/Icons/shopping-basket.png" alt="Carrinho">
+        <span id="cartCount">0</span></li>
+        </div>
+    </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div class="carousel">
+    <div class="carousel-inner" id="carouselInner">
+      <div class="carousel-slide" style="background-image: url('/src/imagens/Carrossel/6.jpg')">
+        <h2>Blackfriday</h2>
+        <p>Confira os descontos exclusivos aqui em nosso site em medicamentos e cosméticos.</p>
+        <button onclick="window.location.href='#promo'">Promoções é Aqui</button>
+      </div>
+      <div class="carousel-slide" style="background-image: url('/src/imagens/Carrossel/2.jpg')">
+        <h2>Exames Rápidos</h2>
+        <p>Não saia de casa, nós vamos até você para fazer os principais exames para manter sua saúde em dia.</p>
+        <button onclick="window.location.href='https://wa.me/5599999999999'">Agende agora</button>
+      </div>
+      <div class="carousel-slide" style="background-image: url('/src/imagens/Carrossel/8.jpg')">
+        <h2>Agende sua entrega</h2>
+        <p>Cadastre sua receita e tenha, todos os meses, seus medicamentos em casa!</p>
+        <button onclick="window.location.href='https://wa.me/5599999999999'">Cadastre-se Aqui</button>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button onclick="prevSlide()">&#10094;</button>
+      <button onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Products Section -->
+  <section class="products-section">
+    <h2>Produtos Mais Pesquisados</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="/src/imagens/Produtos/colágeno.jpg" alt="Colágeno em Cápsula">
+        <h3>Colágeno em Cápsula</h3>
+        <button onclick="addToCart()">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product-card">
+        <img src="/src/imagens/Produtos/creme facial.webp" alt="Creme Hidratante Facial">
+        <h3>Creme Hidratante Facial</h3>
+        <button onclick="addToCart()">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product-card">
+        <img src="/src/imagens/Produtos/losartana.jpg" alt="Losartana 50mg">
+        <h3>Losartana 50mg</h3>
+        <button onclick="addToCart()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+</body>
+</html>
+
